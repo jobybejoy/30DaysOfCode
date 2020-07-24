@@ -1,0 +1,152 @@
+*{ margin:0; padding: 0;}
+
+:root{
+  --page-margin: 120px 
+}
+
+.page{
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #fff;
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.page__container{
+  min-height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 120px;
+  padding: 0 var(--page-margin);
+
+  flex-direction: column;
+}
+
+.section{
+  width: 100%;
+}
+
+.section__title{
+  /* width: 100%;
+  text-align: left; */
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.section__subtitle{
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.section__details{
+  margin-top: 36px;
+}
+
+.horizontal__scrool{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-left: calc(-1 * var(--page-margin));
+  margin-right: calc(-1 * var(--page-margin));
+}
+
+.horizontal__scrool .card:first-child{
+  margin-left: var(--page-margin);
+}
+
+.horizontal__scrool .card:last-child{
+  /* margin-right: 60px; */
+  /* Todo WIP */
+  /* background-color: red; */
+}
+
+.card{
+  flex: 0 0 auto;
+  display: inline-block;
+  font-weight: 400;
+  color: rgb(88, 88, 88);
+}
+
+.card .card__image{
+   width: 410px;
+  height: 295px;
+  background-color: #C4C4C4;
+  border-radius: 24px;
+
+  margin-bottom: 16px;
+  
+}
+
+.card__image img{
+  height: 100%;
+  background-clip: border-box;
+}
+
+.horizontal__scrool .card{
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+
+.horizontal__scrool::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4px;
+
+  display: none;
+}
+
+/* Track */
+.horizontal__scrool::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05); 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+.horizontal__scrool::-webkit-scrollbar-thumb {
+  background: #C4C4C4; 
+  border-radius: 4px;
+}
+
+.card__title{
+  color: #333;
+}
+
+.card__subtitle{
+  display: flex;
+}
+
+.card__year::after{
+  content: "-";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card__rating{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 4px 6px;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+
+
+.card__details__row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc( 100% - ( 2 * 16px ) );
+  margin: auto;
+}
+
+.card__details__row+.card__details__row{
+  margin-top: 8px;
+}
