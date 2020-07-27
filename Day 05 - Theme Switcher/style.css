@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-background-color: #eee;
+  --page-color: #333;
+
+  --page-card-border: black;
+}
+
+.page {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--page-background-color);
+  color: var(--page-color);
+  font-size: 18px;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__container {
+  width: 70%;
+  min-height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page__title {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 36px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: var(--page-background-color);
+  border-radius: 8px;
+  border: 5px solid var(--page-card-border);
+  position: relative;
+  z-index: 3;
+  box-shadow: 10px 10px 0 0px var(--page-card-border);
+}
+
+.card.selected::before {
+  content: "Active";
+  background-color: var(--page-background-color);
+
+  padding: 3px 6px;
+  margin-bottom: 24px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border-radius: 4px;
+  color: var(--page-color);
+  border: 2px solid var(--page-color);
+}
+
+.card:active {
+  box-shadow: 2px 2px 0px 0px var(--page-card-border);
+}
+
+.card__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.card__colors__item {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 1em;
+}
+
+.card__colors__swatch {
+  height: 36px;
+  width: 36px;
+  margin-right: 20px;
+  border: 2px solid var(--page-card-border);
+}
