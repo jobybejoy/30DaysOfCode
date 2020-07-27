@@ -1,0 +1,128 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-family: 'Muli', sans-serif;
+  color: #323357;
+  font-size: 16px;
+}
+
+.page_container{
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F8FF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cr_container{
+  width:100%;
+  background-color: #fff;
+
+   padding: 70px 81px;
+
+   border-radius: 10px;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   box-sizing: border-box;
+
+   box-shadow: 0px 20px 20px -4px  rgba(193,211,251,0.53);
+   /* box-shadow: 0 20px 0 -10px rgba(193,211,251,0.53); */
+
+   /* border: 1px solid red */
+}
+
+.cr_title{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cr_stars_container{
+  background-color: #F5F8FF;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px;
+  border-radius: 100px;
+}
+
+.cr_stars_container .cr_star{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.cr_stars_counts{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.cr_total_reviews{
+  margin-top: 5px;
+}
+
+.cr_reviews_container{
+  margin-top: 60px;
+}
+
+.cr_review_rating{
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  margin-bottom: 20px;
+}
+
+.cr_review_rating .cr_rating_score{
+  font-size: 18px;
+  color: #2A5BDA;
+  margin-right: 12px;
+}
+
+.cr_reviews_container progress[value]{
+  width: 250px;
+  height: 18px;
+
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+.cr_reviews_container progress[value]::-webkit-progress-bar{
+  background-color: #F5F8FF;
+  border-radius: 18px;
+}
+
+.cr_reviews_container progress[value]::-webkit-progress-value{
+  background-color: #FFCC48;
+  border-radius: 18px;
+  height: 18px;
+  
+  box-shadow: 0 4px 10px rgba(255,204,72,0.53);
+}
+
+.cr_review_rating .cr_rating_percentage{
+  font-size: 18px;
+  color: #323357;
+  margin-left: 12px;
+}
+
+.cr_how{
+  margin-top: 20px;
+   color: #2A5BDA;
+}
+
+
+.cr_card{
+   width: 550px;
+
+   position: relative;
+}
