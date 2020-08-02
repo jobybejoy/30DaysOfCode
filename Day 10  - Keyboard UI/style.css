@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-background-color: #fff;
+  --page-font-color: #333;
+  --page-cta-color: rgb(209, 28, 209);
+
+  --key-size: 50px;
+  --key-border-radius: 8px;
+  --key-spacing: 8px;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--page-background-color);
+  color: var(--page-font-color);
+  font-family: "Roboto";
+}
+
+.page__container {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard__container {
+}
+
+.keyboard__row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.keyboard__key {
+  width: var(--key-size);
+  height: var(--key-size);
+
+  background-color: var(--page-background-color);
+
+  box-sizing: border-box;
+  padding: 0.2em 0.4em;
+
+  box-shadow: 5px 10px 0 0 var(--page-font-color);
+
+  font-size: 1.8em;
+  font-weight: bold;
+
+  margin: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border: 2px solid var(--page-font-color);
+  border-left: 2px solid #888;
+  border-top: 2px solid #888;
+  border-radius: var(--key-border-radius);
+
+  transition: all ease-in-out 0.05s;
+}
+
+.keyboard__key > * {
+  pointer-events: none;
+}
+
+.keyboard__key.width--2 {
+  width: 75px;
+  font-size: 1em;
+}
+
+.keyboard__key.width--3 {
+  width: 100px;
+  font-size: 1em;
+}
+
+.keyboard__key.width--4 {
+  width: 109px;
+  font-size: 1em;
+}
+.keyboard__key.width--5 {
+  width: 142px;
+  font-size: 1em;
+}
+
+.keyboard__key.left--end {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.keyboard__key.right--end {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.keyboard__key.normal {
+  font-size: 1em;
+}
+
+.keyboard__key.space {
+  width: 340px;
+}
+
+.keyboard__key .label {
+  font-size: 0.7em;
+  display: inline-block;
+  margin: -2px;
+}
+
+.keyboard__key.active {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 5px 5px 0 var(--page-font-color);
+  background-color: var(--page-cta-color);
+  color: var(--page-background-color);
+  /* color: red; */
+}
+/* 
+.keyboard__key.half {
+  height: 25px;
+  font-size: 0.7em;
+} */
+
+.keyboard__key[data-code="ArrowLeft"] {
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.keyboard__key[data-code="ArrowRight"] {
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.keyboard__key[data-code="ArrowUp"],
+.keyboard__key[data-code="ArrowDown"] {
+  height: 23px;
+  width: 67px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.keyboard__key[data-code="ArrowUp"] {
+  box-shadow: 2px 5px 0 0 var(--page-font-color);
+}
+.keyboard__key[data-code="ArrowDown"] {
+  margin-left: -75px;
+  margin-top: 34px;
+}
