@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11 - Calender Component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__container">
+        <div class="calender__component">
+          <h1 class="calender__title">Calender</h1>
+          <div class="calender__header">
+            <button class="calender__navigation__button prev">
+              <img src="./icons/keyboard_arrow_left-24px.svg" alt="" />
+            </button>
+            <h3 class="calender__monthAndYear"></h3>
+            <button class="calender__navigation__button next">
+              <img src="./icons/keyboard_arrow_right-24px.svg" alt="" />
+            </button>
+          </div>
+          <div class="calender__body">
+            <div class="calender__week">
+              <div class="week__label">MO</div>
+              <div class="week__label">TU</div>
+              <div class="week__label">WE</div>
+              <div class="week__label">TH</div>
+              <div class="week__label">FR</div>
+              <div class="week__label">SA</div>
+              <div class="week__label">SU</div>
+            </div>
+            <div class="calender__days"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --page-background-color: #eee;
+  --page-font-color: #0d005b;
+  --page-cta-color: #6853e3;
+  --page-cta-hover: #cfc6ff;
+}
+
+.page {
+  font-family: "Nunito Sans", sans-serif;
+
+  background-color: var(--page-background-color);
+  color: var(--page-font-color);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  width: 50%;
+  margin: auto;
+}
+
+.calender__component {
+  margin-top: -30px;
+
+  /* width: 300px; */
+  padding: 16px;
+}
+
+.calender__title {
+  font-size: 2em;
+  font-weight: 800;
+  /* padding-left: 16px; */
+}
+
+.calender__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 32px;
+
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.calender__navigation__button {
+  height: 44px;
+  width: 44px;
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender__monthAndYear {
+  font-size: 1.5em;
+}
+
+.calender__week {
+  display: grid;
+  grid-template-columns: repeat(7, 35px);
+  gap: 8px;
+
+  justify-content: space-between;
+
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+.week__label {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+
+.calender__days {
+  display: grid;
+  grid-template-columns: repeat(7, 36px);
+  grid-template-rows: repeat(7, 36px);
+  justify-content: space-between;
+
+  text-align: center;
+  vertical-align: center;
+  gap: 4px 8px;
+}
+
+.calender__days .date {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+}
+
+.calender__days .date.selected {
+  font-weight: bold;
+  color: var(--page-background-color);
+  background-color: var(--page-cta-color);
+}
+
+.calender__days .date:hover {
+  background-color: var(--page-cta-hover);
+}
+
+.bold {
+  font-weight: 800;
+}
