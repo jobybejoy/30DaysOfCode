@@ -1,0 +1,50 @@
+button {
+  padding: 16px 32px;
+  border: none;
+  background-color: var(--page-background-color);
+  color: var(--page-font-color);
+  border: 2px solid transparent;
+  outline-offset: 4px;
+
+  font-weight: bold;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--page-background-second-color);
+}
+
+button[disabled="disabled"],
+button:disabled,
+button:disabled:hover,
+button:disabled:focus {
+  background-color: var(--page-background-second-color);
+  color: var(--page-font-color);
+  cursor: not-allowed;
+  border-color: var(--page-background-second-color);
+}
+
+.btn--primary {
+  background-color: var(--page-cta-background-color);
+  color: var(--page-cta-font-color);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--page-cta-focus-color);
+  color: var(--page-cta-font-color);
+  border-color: var(--page-cta-focus-color);
+}
+
+.btn--rounded {
+  border-radius: var(--page-cta-border-radius);
+}
+
+.btn--rounded:hover,
+.btn--rounded:focus {
+  outline: none;
+}
+
+.btn--outline {
+  border-color: var(--page-cta-background-color);
+}

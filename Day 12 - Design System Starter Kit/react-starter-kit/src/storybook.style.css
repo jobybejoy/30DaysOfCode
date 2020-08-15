@@ -1,0 +1,32 @@
+.storybook__page__container {
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+}
+
+.App .storybook__start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.App .storybook__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.solo h1,
+.solo h2,
+.solo h3,
+.solo h4,
+.solo h5,
+.solo h6 {
+  padding: 24px;
+}
+
+.solo p {
+  padding: 24px;
+}

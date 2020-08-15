@@ -1,0 +1,41 @@
+:root {
+  --page-background-color: #eee;
+  --page-background-second-color: rgb(202, 201, 201);
+  --page-font-color: #333;
+
+  --page-cta-background-color: #181818;
+  --page-cta-font-color: #eee;
+  --page-cta-focus-color: orangered;
+  --page-cta-border-radius: 100px;
+
+  --page-font-base-size: 18px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--page-font-base-size);
+  background-color: var(--page-background-color);
+  color: var(--page-font-color);
+}
+
+.page__container {
+  width: 80%;
+  margin: auto;
+
+  box-sizing: border-box;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+}

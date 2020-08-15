@@ -1,0 +1,31 @@
+.input {
+  padding: 12px 16px;
+  background-color: var(--page-background-color);
+  border: 2px solid var(--page-background-second-color);
+  outline-offset: 4px;
+
+  border-radius: 4px;
+
+  display: block;
+}
+
+.input:focus {
+  background-color: var(--page-background-second-color);
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+label {
+  padding: 8px 0;
+  font-size: 1em;
+}
+
+.input:focus + label,
+.input:active + label {
+  font-weight: bold;
+  background-color: red;
+}
